@@ -3,9 +3,9 @@ import json
 import re
 
 
-PROPER_NOUNS_FILE = "proper_nouns_hu.txt"
-FREQ_WORDS_FILE = "top_freq_5000_hu.txt"
-STOPWORDS_FILE = "stopwords_hu.txt"
+PROPER_NOUNS_FILE = "word_lists/proper_nouns_hu.txt"
+FREQ_WORDS_FILE = "word_lists/top_freq_5000_hu.txt"
+STOPWORDS_FILE = "word_lists/stopwords_hu.txt"
 
 OUTPUT_JSON = "result.json"
 OUTPUT_TXT = "result.txt"
