@@ -8,10 +8,11 @@ def find_words_containing(search_string, wordlist_file="word_lists/top_freq_5000
 
     with open(wordlist_file, "r", encoding="utf-8") as file:
         for line in file:
-            word = line.strip()
+            words = line.split()
 
-            if search_string.lower() in word.lower():
-                matches.append(word)
+            for word in words:
+                if search_string.lower() in word.lower():
+                    matches.append(word)
 
     return matches
 
