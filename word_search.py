@@ -11,6 +11,7 @@ def find_words_containing(search_string, wordlist_file="word_lists/top_freq_5000
             words = line.split()
 
             for word in words:
+                word = word.strip(",.;:")
                 if search_string.lower() in word.lower():
                     matches.append(word)
 
@@ -19,5 +20,5 @@ def find_words_containing(search_string, wordlist_file="word_lists/top_freq_5000
 
 # Tesztelés
 if __name__ == "__main__":
-    result = find_words_containing("alma")
+    result = find_words_containing("pont")
     print(result)
